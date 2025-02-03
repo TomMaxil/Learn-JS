@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    /*TimerFunction*/
+
+     
+  /*SetTimeout Function*/
+    function sayhello(){
+    document.write("Say Hello After 5 Second");
+    }
+    
+    setTimeout (sayhello,5000);
+
+  /*SetInterval Function*/
+    setInterval(()=>{
+        document.write("Say Welcome in 1 Second");
+        document.write("<br>");
+    },1000);
+
+    /*ClearInterval Function*/
+      let interval = setInterval(()=>{
+        document.write("Say Welcome After 1 Second");
+        document.write("<br>");
+      },1000);
+    
+    setTimeout(()=>{
+        clearInterval(interval);
+        document.write("Interval Stop Hogaya");
+        document.write("<br>");
+    },5000);
+    
+
+</script>
+
+</body>
+</html>

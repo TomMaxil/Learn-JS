@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+           /*Functions*/
+
+
+/*For Tag*/
+        for (i = 0;i<=10; i++){
+            document.write(i);
+            document.write("<br>");
+        }
+
+        for (a = 0;a <=100; a++){
+            document.write(a);
+            document.write("<br>");
+        }
+
+
+/*Table*/      
+         let table = prompt('Enter your table');
+
+        console.log(table);
+
+            for (a=1;a <=10; a++){
+            document.write(table + "x"+ a + "=" +table*a);
+            document.write("<br>");
+        }
+
+/*While Tag*/
+             let u = 1;
+             while (u <= 10) {
+                document.write(u);
+                document.write("<br>");
+             u++; }
+             
+/*do While*/             
+           let i = 0;
+            do {
+            console.log(i);
+           i++;
+         } while (i < 5);
+
+/*Function with parameter*/        
+                          function addnumbers(a ,b){
+                            return a+b;
+                          }
+                         
+                         let sum = addnumbers(50 ,70);
+                         document.write(sum);
+
+/*Anonymous Function*/                        
+                    let add = function(a ,b){
+                    return a + b;
+                    };
+
+                    console.log(add(15 +100));
+
+/*Arrow Function*/                    
+function calculate(value1, value2) {
+        return value1 + value2;
+      }
+      //arrow function () => {}
+     let arrowCalcuate =  (value1, value2) => value1 + value2
+
+     document.write(arrowCalcuate(55,65));
+
+    </script>
+</body>
+</html>
