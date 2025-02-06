@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*promise banane ka tareeka*/
+        let mypromise = new Promise (function(resolve, reject){
+            let mycondition = false;
+
+            if(mycondition){
+                resolve("Apka kaam hogaya");
+            }else {reject ("Apka kaam nhin howa")};
+        });
+
+        /*promise handle krne ka tareeka*/
+        mypromise.then((message)=>{
+            console.log(message);
+        }).catch((error)=>{
+            console.log(error);
+        });
+            
+        
+    </script>
+</body>
+</html>
